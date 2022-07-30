@@ -34,6 +34,8 @@ function basicTests(){
 }
 
 basicTests();
-benchmark(isUnique, isUnique2, generateRandomString(200), 10_000_000);
+let str = generateRandomString(500);
+console.log(str);
+benchmark(isUnique, isUnique2, str, 100_000);
 
 

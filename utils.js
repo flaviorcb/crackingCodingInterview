@@ -3,7 +3,8 @@
 function generateRandomString(size){
     let result = [];
     for(let i = 0; i < size; i++){
-        let charCode = 97 + Math.floor(Math.random() * 25);
+        //let base = [67, 97][Math.floor(Math.random() * 2)];
+        let charCode = 126 + Math.floor(Math.random() * 8000);
         result.push(String.fromCharCode(charCode));
     }
     return result.join('');
